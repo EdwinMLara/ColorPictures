@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emlar.colorpictures.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Layout_Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bottonCamara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_photo_camera_black_48dp"
+            android:contentDescription="@string/imagen_fotos"
+            android:onClick="tomarFoto"/>
+
+        <ImageView
+            android:id="@+id/bottonVideoCamara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/imagen_galeria_fotos"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_videocam_black_48dp"
+            android:onClick="tomarVideo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_Inferior"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bottonGaleriaFotos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_photo_library_black_48dp"
+            android:contentDescription="@string/imagen_video"
+            android:onClick="verGaleriaFotos"/>
+
+        <ImageView
+            android:id="@+id/buttonGaleriaVideos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_video_library_black_48dp"
+            android:contentDescription="@string/imagen_galeria_video"
+            android:onClick="verGaleriaVideo"/>
+    </LinearLayout>
+
+</LinearLayout>
